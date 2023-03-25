@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+struct Employee{
+	int id;
+	char name[10];
+	struct Date{
+		int dd;
+		int mm;
+		int yy;
+	}dob;
+}emp;
+int main(){
+	printf("enter id:");
+	scanf("%d",&emp.id);
+	printf("enter name:");
+	scanf("%s",&emp.name);
+	printf("enter dob:");
+	scanf("%d %d %d",&emp.dob.dd,&emp.dob.mm,&emp.dob.yy);
+	printf("\nid=%d\n name=%s\n date=%d-%d-%d\n",emp.id,emp.name,emp.dob.dd,emp.dob.mm,emp.dob.yy);
+}
